@@ -40,7 +40,7 @@ background:transparent;
 
 /* My stylesheet */
 
-h1 h2 {
+h1, h2 {
     font-family: "Noto Serif", serif;
     font-weight: 400;
 }
