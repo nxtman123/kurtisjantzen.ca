@@ -55,28 +55,30 @@ div.pane {
     background-position: center;
 }
 
-div.main {
+div.hero {
     height: 100vh;
-    background-image: url("main_0.jpg");
+    background-image: url("hero_0.jpg");
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
+    z-index: 100;
 }
 
 #title-name {
     text-align: center;
-    font-size: 12vw;
+    font-size: 10vw;
     width: 100%;
     color: white;
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 35rem) {
     #title-name {
         font-size: 48pt;
     }
 }
 
-@media all and (min-width: 1200px) and (min-height: 800px) {
+@media all and (min-width: 85rem) and (min-height: 50rem) {
     #title-name {
         font-size: 72pt;
     }
@@ -87,42 +89,48 @@ div.main {
     height: 3em;
 }
 
+div.main {
+    margin-top: 8rem;
+    position: sticky;
+    bottom: 0;
+    height: 100vh;
+    z-index: 0;
+}
+
 div.about {
     background-color: black;
-    color: white;
+    color: #c0c0c0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 div.portrait {
-    flex: 1 0 540px;
+    flex: 1 0 35rem;
+    max-height: 100vh;
+    max-width: 100vh;
 }
 
 #portrait {
     margin: 10%;
     width: 80%;
+    max-width: 80vh;
     border-radius: 50%;
 }
 
 div.bio {
-    flex: 1 0 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-div.bio div {
-    margin: 0 6em;
+    flex: 1 0 25rem;
 }
 
 div.about h2 {
     font-size: 42pt;
-    margin: 1em 0;
+    margin: 4rem;
 }
 
 div.about p {
     font-size: 16pt;
-    margin-bottom: 8ch;
+    margin: 0 4rem 8ch;
 }
 
 footer {
