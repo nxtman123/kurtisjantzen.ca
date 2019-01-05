@@ -63,13 +63,13 @@ div.hero {
     justify-content: space-around;
     position: relative;
     z-index: 100;
+    text-align: center;
+    color: white;
 }
 
 #title-name {
-    text-align: center;
     font-size: 10vw;
     width: 100%;
-    color: white;
 }
 
 @media all and (min-width: 35rem) {
@@ -89,6 +89,13 @@ div.hero {
     height: 3em;
 }
 
+div.hero i {
+    font-size: 22pt;
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+}
+
 div.main {
     margin-top: 8rem;
     position: sticky;
@@ -99,7 +106,7 @@ div.main {
 
 div.about {
     background-color: black;
-    color: #c0c0c0;
+    color: #cccccc;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
