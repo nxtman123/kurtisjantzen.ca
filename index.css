@@ -40,22 +40,32 @@ background:transparent;
 
 /* My stylesheet */
 
-div.main {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("main_0.jpg");
+h1 h2 {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+}
+
+div.pane {
+    width: 100%;
     background-size: cover;
     background-position: center;
+}
+
+div.main {
+    height: 100vh;
+    background-image: url("main_0.jpg");
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 #title-name {
-    font-family: "Noto Serif", serif;
     text-align: center;
     font-size: 12vw;
-    font-weight: 400;
     width: 100%;
     color: white;
 }
@@ -75,4 +85,48 @@ div.main {
 #logo {
     width: 3em;
     height: 3em;
+}
+
+div.about {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.portrait {
+    flex: 1 0 540px;
+}
+
+#portrait {
+    margin: 10%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+div.bio {
+    flex: 1 0 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.bio div {
+    margin: 0 6em;
+}
+
+div.about h2 {
+    font-size: 42pt;
+    margin: 1em 0;
+}
+
+div.about p {
+    font-size: 16pt;
+    margin-bottom: 8ch;
+}
+
+footer {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 1ch 1em;
 }
