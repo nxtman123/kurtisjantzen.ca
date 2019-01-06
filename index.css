@@ -109,12 +109,11 @@ div.about {
     color: #cccccc;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 }
 
 div.portrait {
-    flex: 1 1 35rem;
+    flex: 0 1 35rem;
     max-height: 100vh;
     max-width: 100vh;
 }
@@ -128,6 +127,7 @@ div.portrait {
 
 div.bio {
     flex: 1 1 25rem;
+    max-width: 45rem;
 }
 
 div.about h2 {
@@ -136,7 +136,7 @@ div.about h2 {
 }
 
 div.about p {
-    font-size: 16pt;
+    font-size: 14pt;
     margin: 0 4rem 8ch;
 }
 
