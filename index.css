@@ -57,7 +57,7 @@ div.hero {
     height: 100vh;
     background-image: url("hero_0.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
