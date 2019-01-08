@@ -55,7 +55,7 @@ div.pane {
 
 div.hero {
     height: 100vh;
-    background-image: url("hero_0.jpg");
+    background-image: url("hero.jpg");
     background-size: cover;
     background-position: top;
     display: flex;
