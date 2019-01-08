@@ -133,14 +133,14 @@ div.about p {
 }
 
 footer {
-    background-color: #050505;
-    color: red;
+    background-color: #0a0c0e;
+    color: #ba0814;
     text-align: center;
     padding: 1ch 1em;
 }
 
 #footer-logo {
-    background-color: red;
+    background-color: #ba0814;
     width: 3rem;
     height: 3rem;
     mask: url(logo.svg);
