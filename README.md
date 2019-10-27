@@ -1,3 +1,3 @@
 # My Personal Site
 
-[Check it out!](https://kurtisjantzen.com)
+[Check it out!](https://kurtisjantzen.ca)

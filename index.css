@@ -15,27 +15,30 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-margin:0;
-padding:0;
-border:0;
-outline:0;
-font-size:100%;
-vertical-align:baseline;
-background:transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-display:block;
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 nav ul {
-list-style:none;
+    list-style: none;
 }
+
 a {
-margin:0;
-padding:0;
-font-size:100%;
-vertical-align:baseline;
-background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 /* My stylesheet */
@@ -55,7 +58,7 @@ div.pane {
 
 div.hero {
     height: 100vh;
-    background-image: url("hero.jpg");
+    background-image: url("hero_2048.jpg");
     background-size: cover;
     background-position: top;
     display: flex;
@@ -65,6 +68,18 @@ div.hero {
     z-index: 100;
     text-align: center;
     color: white;
+}
+
+@media screen and (max-width: 1920px) {
+    div.hero {
+        background-image: url("hero_1920.jpg");
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    div.hero {
+        background-image: url("hero_1080.jpg");
+    }
 }
 
 #title-name {
@@ -129,21 +144,18 @@ div.about h2 {
 
 div.about p {
     font-size: 14pt;
-    margin: 0 4rem 8ch;
+    margin: 4ch 4rem 4ch;
 }
 
 footer {
-    background-color: #0a0c0e;
-    color: #ba0814;
+    background-color: #401770;
+    color: #cccccc;
     text-align: center;
     padding: 1ch 1em;
 }
 
 #footer-logo {
-    background-color: #ba0814;
     width: 3rem;
     height: 3rem;
-    mask: url(logo.svg);
-    mask-size: contain;
     margin: 1rem auto;
 }
