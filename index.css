@@ -3,18 +3,75 @@
 * Richard Clark (http://richclarkdesign.com)
 * http://cssreset.com
 */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,8 +81,17 @@ time, mark, audio, video {
     background: transparent;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -44,25 +110,53 @@ a {
 /* My stylesheet */
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: "Noto Serif", serif;
     font-weight: 400;
 }
 
-h3,
 h4,
+h5,
 p,
+a,
 ul {
     font-family: "Noto Sans", sans-serif;
+    font-size: 14pt;
+}
+
+h2 {
+    font-size: 42pt;
 }
 
 h3 {
+    font-size: 24pt;
+}
+
+h5 {
     font-style: italic;
 }
 
 ul {
     margin-bottom: 1rem;
     margin-left: 1.5rem;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 1.45;
+}
+
+a {
+    line-height: 1.45;
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
 }
 
 div.pane {
@@ -146,9 +240,24 @@ div.hero i {
     bottom: 1rem;
 }
 
-div.about {
+.dark {
     background-color: #0C0B0D;
     color: #cccccc;
+}
+
+.purple {
+    background-color: #401770;
+    color: #ffffff;
+}
+
+.teal {
+    background-color: #187088;
+    color: #ffffff;
+}
+
+.orange {
+    background-color: #ea6a38;
+    color: #ffffff;
 }
 
 div.portrait {
@@ -167,25 +276,20 @@ div.portrait {
     margin: 2rem 0;
 }
 
-div.caption{
+div.caption {
     flex: 1 0 0;
     margin-bottom: 6rem;
 }
 
 div.pane h2 {
-    font-size: 42pt;
     margin: 4rem 0 2rem;
 }
 
-div.pane p {
-    font-size: 14pt;
-    line-height: 1.45;
-    margin: 2rem 0;
+div.pane h3 {
+    margin: 2rem 0 0.5rem;
 }
 
 footer {
-    background-color: #401770;
-    color: #cccccc;
     text-align: center;
     padding: 1.5rem 0.5rem;
 }
