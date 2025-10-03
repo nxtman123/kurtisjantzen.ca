@@ -43,17 +43,52 @@ a {
 
 /* My stylesheet */
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Noto Serif", serif;
     font-weight: 400;
 }
 
-p {
+h3,
+h4,
+p,
+ul {
     font-family: "Noto Sans", sans-serif;
+}
+
+h3 {
+    font-style: italic;
+}
+
+ul {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
 }
 
 div.pane {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.container {
+    width: 80rem;
+    max-width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+div.row-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 50rem) {
+    div.row-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 div.hero {
@@ -112,46 +147,47 @@ div.hero i {
 }
 
 div.about {
-    background-color: black;
+    background-color: #0C0B0D;
     color: #cccccc;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 div.portrait {
-    flex: 0 1 35rem;
+    flex: 1 0 0;
     max-height: 100vh;
-    max-width: 100vh;
+    max-width: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #portrait {
-    margin: 10%;
     width: 80%;
     max-width: 80vh;
     border-radius: 50%;
+    margin: 2rem 0;
 }
 
-div.bio {
-    flex: 1 1 25rem;
-    max-width: 45rem;
+div.caption{
+    flex: 1 0 0;
+    margin-bottom: 6rem;
 }
 
-div.about h2 {
+div.pane h2 {
     font-size: 42pt;
-    margin: 4rem;
+    margin: 4rem 0 2rem;
 }
 
-div.about p {
+div.pane p {
     font-size: 14pt;
-    margin: 4ch 4rem 4ch;
+    line-height: 1.45;
+    margin: 2rem 0;
 }
 
 footer {
     background-color: #401770;
     color: #cccccc;
     text-align: center;
-    padding: 1ch 1em;
+    padding: 1.5rem 0.5rem;
 }
 
 #footer-logo {

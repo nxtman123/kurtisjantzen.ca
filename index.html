@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Kurtis Jantzen" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-        <title>Kurtis Jantzen</title>
-        <link href="favicon.ico" rel="icon" />
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link href="index.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="hero pane">
-            <h1 id="title-name"><img id="logo" src="logo.svg" alt="my logo" /><br />Kurtis Jantzen</h1>
-            <i class="material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="about pane">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kurtis Jantzen" />
+    <meta name="description" content="Kurtis Jantzen's personal website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <title>Kurtis Jantzen</title>
+    <link href="favicon.ico" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="hero pane">
+        <h1 id="title-name"><img id="logo" src="logo.svg" alt="my logo" /><br />Kurtis Jantzen</h1>
+        <i class="material-icons">keyboard_arrow_down</i>
+    </div>
+    <div class="about pane">
+        <div class="container row-wrap">
             <div class="portrait">
-                <img id="portrait" src="kurtis_jantzen_portrait.jpg" alt="Kurtis Jantzen" />
+                <img id="portrait" src="kurtis-jantzen-photo.jpg" alt="Kurtis Jantzen" />
             </div>
-            <div class="bio">
+            <div class="caption">
                 <h2>Hello</h2>
-                <p>I'm a Software Engineer living in Calgary. My work experience centers around full-stack web development.</p>
+                <p>
+                    I'm a full-stack engineer driven to develop quality enterprise applications architected for scale
+                    and
+                    extensibility.
+                    I've been developing database-backed web apps with aesthetic, responsive interfaces for 14 years.
+                </p>
             </div>
         </div>
-        <footer>
-            <img id="footer-logo" src="logo.svg" alt="my logo" />
-            <p>Copyright &copy; 2020 Kurtis Jantzen</p>
-        </footer>
-    </body>
+    </div>
+    <div class="pane">
+        <div class="container caption">
+            <h2>Work Experience</h2>
+            <h3>OpenHouse.ai, Calgary AB</h3>
+            <h4>Lead Software Developer, 2023-2025</h4>
+            <ul>
+                <li>Led a team of 5 to build a new messaging platform from “git init” through MVP launch</li>
+                <li>Translated product goals into code deliverables</li>
+                <li>Architected the platform to meet complex requirements, including delivering messages
+                    flexibly across channels e.g. SMS, email, web socket, push notifications</li>
+                <li>Integrated with external systems e.g. CRMs, CallRail, ChatGPT</li>
+                <li>Mentored junior developers in backend development (Kotlin, Spring Boot), frontend
+                    development (TypeScript, Next.js, React, Redux, hooks, CSS), and dev tools (git, linux)</li>
+            </ul>
+            <h4>Software Developer, 2019-2023</h4>
+            <ul>
+                <li>Designed and built new backend micro-services in a Google App Engine serverless environment
+                    including SQL databases, service layers, messaging buses, and APIs</li>
+                <li>Created a flexible UI that adapts to multiple brand styles (logos, colours, fonts) and
+                    content sets to create a white-labeled multi-tenant platform in one deployment</li>
+                <li>Created an ETL pipeline for processing large-scale GIS-statistical data</li>
+                <li>Pushed for and implemented web accessibility best practices</li>
+                <li>Introduced React app architecture best practices as a team member</li>
+            </ul>
+            <h3>Clinical Research Unit, University of Calgary</h3>
+            <h4>Software Developer Intern, 2018, 4 months</h4>
+            <ul>
+                <li>Developed a clinical trial screening application frontend in React</li>
+            </ul>
+            <h3>Pason Systems, Calgary AB</h3>
+            <h4>Software Developer Intern, 2016-2017, 16 months</h4>
+            <ul>
+                <li>Contributed full-stack development to internal Enterprise Applications</li>
+                <li>Added the first REST APIs to a legacy Python backend</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <img id="footer-logo" src="logo.svg" alt="my logo" />
+        <p>Copyright &copy; 2020 Kurtis Jantzen</p>
+    </footer>
+</body>
+
 </html>
