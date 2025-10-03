@@ -180,6 +180,7 @@ div.container {
 div.row-wrap {
     display: flex;
     flex-direction: row;
+    gap: 3rem;
 }
 
 @media screen and (max-width: 50rem) {
@@ -238,20 +239,25 @@ div.hero {
 }
 
 div.hero i {
-    font-size: 22pt;
+    font-size: 28pt;
     position: absolute;
     width: 100%;
     bottom: 2rem;
     animation: bounce 10s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    30%,
+    100% {
+        transform: translateY(0);
     }
 
-    @keyframes bounce {
-        0%, 20%, 30%, 100% {
-            transform: translateY(0);
-        }
-        25% {
-            transform: translateY(1rem);
-        }
+    25% {
+        transform: translateY(1rem);
+    }
 
 }
 
@@ -290,10 +296,10 @@ div.portrait {
 }
 
 #portrait {
-    width: 80%;
-    max-width: 80vh;
+    width: 100%;
+    max-width: 60vh;
     border-radius: 50%;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 div.caption {
