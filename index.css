@@ -133,13 +133,17 @@ h3 {
     font-size: 24pt;
 }
 
+h4 {
+    font-weight: bold;
+}
+
 h5 {
-    font-style: italic;
+    font-size: 12pt;
+    font-weight: normal;
 }
 
 ul {
-    margin-bottom: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 p {
@@ -237,27 +241,43 @@ div.hero i {
     font-size: 22pt;
     position: absolute;
     width: 100%;
-    bottom: 1rem;
+    bottom: 2rem;
+    animation: bounce 10s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 30%, 100% {
+            transform: translateY(0);
+        }
+        25% {
+            transform: translateY(1rem);
+        }
+
 }
 
 .dark {
     background-color: #0C0B0D;
-    color: #cccccc;
+    color: #f0eef0;
+}
+
+.light {
+    background-color: #fffafa;
+    color: #100a0a;
 }
 
 .purple {
     background-color: #401770;
-    color: #ffffff;
+    color: white;
 }
 
 .teal {
     background-color: #187088;
-    color: #ffffff;
+    color: white;
 }
 
 .orange {
     background-color: #ea6a38;
-    color: #ffffff;
+    color: white;
 }
 
 div.portrait {
@@ -287,6 +307,15 @@ div.pane h2 {
 
 div.pane h3 {
     margin: 2rem 0 0.5rem;
+}
+
+div.list-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 footer {
