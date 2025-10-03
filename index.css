@@ -3,18 +3,75 @@
 * Richard Clark (http://richclarkdesign.com)
 * http://cssreset.com
 */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,8 +81,17 @@ time, mark, audio, video {
     background: transparent;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -43,17 +109,85 @@ a {
 
 /* My stylesheet */
 
-h1, h2 {
+h1,
+h2,
+h3 {
     font-family: "Noto Serif", serif;
     font-weight: 400;
 }
 
-p {
+h4,
+h5,
+p,
+a,
+ul {
     font-family: "Noto Sans", sans-serif;
+    font-size: 14pt;
+}
+
+h2 {
+    font-size: 42pt;
+}
+
+h3 {
+    font-size: 24pt;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 1.45;
+}
+
+a {
+    line-height: 1.45;
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
 }
 
 div.pane {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.container {
+    width: 80rem;
+    max-width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+div.row-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 50rem) {
+    div.row-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 div.hero {
@@ -105,53 +239,94 @@ div.hero {
 }
 
 div.hero i {
-    font-size: 22pt;
+    font-size: 28pt;
     position: absolute;
     width: 100%;
-    bottom: 1rem;
+    bottom: 2rem;
+    animation: bounce 10s infinite;
 }
 
-div.about {
-    background-color: black;
-    color: #cccccc;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+@keyframes bounce {
+
+    0%,
+    20%,
+    30%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(1rem);
+    }
+
+}
+
+.dark {
+    background-color: #0C0B0D;
+    color: #f0eef0;
+}
+
+.light {
+    background-color: #fffafa;
+    color: #100a0a;
+}
+
+.purple {
+    background-color: #401770;
+    color: white;
+}
+
+.teal {
+    background-color: #187088;
+    color: white;
+}
+
+.orange {
+    background-color: #ea581a;
+    color: white;
 }
 
 div.portrait {
-    flex: 0 1 35rem;
+    flex: 1 0 0;
     max-height: 100vh;
-    max-width: 100vh;
+    max-width: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #portrait {
-    margin: 10%;
-    width: 80%;
-    max-width: 80vh;
+    width: 100%;
+    max-width: 60vh;
     border-radius: 50%;
+    margin: 3rem 0;
 }
 
-div.bio {
-    flex: 1 1 25rem;
-    max-width: 45rem;
+div.caption {
+    flex: 1 0 0;
+    margin-bottom: 6rem;
 }
 
-div.about h2 {
-    font-size: 42pt;
-    margin: 4rem;
+div.pane h2 {
+    margin: 4rem 0 2rem;
 }
 
-div.about p {
-    font-size: 14pt;
-    margin: 4ch 4rem 4ch;
+div.pane h3 {
+    margin: 2rem 0 0.5rem;
+}
+
+div.list-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 footer {
-    background-color: #401770;
-    color: #cccccc;
     text-align: center;
-    padding: 1ch 1em;
+    padding: 1.5rem 0.5rem;
 }
 
 #footer-logo {
